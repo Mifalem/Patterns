@@ -17,6 +17,7 @@ class DeliveryTest {
     static void setAll() {
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
+
     @AfterAll
     static void clearAll() {
         SelenideLogger.removeListener("allure");
