@@ -34,6 +34,11 @@ public class DataGenerator {
         var faker = new Faker(new Locale(locale));
         return faker.phoneNumber().phoneNumber();
     }
+    public static String generateRandomPhone(String locale) {
+        var faker = new Faker(new Locale(locale));
+        return faker.numerify("#########");
+
+    }
 
     public static class Registration {
         private Registration() {
